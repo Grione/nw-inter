@@ -1,0 +1,43 @@
+.section-features {
+    padding-top: rem(48px);
+    padding-bottom: rem(40px);
+}
+
+.container-features {
+    text-align: center;
+}
+
+.features__list {
+    width: 100%;
+    margin-top: rem(50px);
+    display: flex;
+    justify-content: space-between;
+}
+
+.features__item {
+
+    @include phones {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.features-icon {
+    @include phones {
+        height: 100%;
+        display: inline !important;
+    }
+}
+
+.features__wrap__icon {
+    width: 100%;
+    height: rem(60px);
+    text-align: center;
+}
+
+.features__desc {
+    margin-top: rem(25px);
+    font-family: "TT Travels Medium";
+    font-size: rem(18px);
+    color: #2a282b;
+}

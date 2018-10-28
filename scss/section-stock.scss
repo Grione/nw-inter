@@ -1,0 +1,103 @@
+.section-stock {
+    width: 100%;
+    height: rem(315px);
+    background-image: url(../img/stock/bg.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.container-stock {
+    display: flex;
+    justify-content: center;
+}
+
+.stock__slider-trapecy {
+    height: 0;
+    width: rem(530px);
+    border-top: rem(315px) solid #214763;
+    border-left: rem(60px) solid transparent;
+    border-right: rem(60px) solid transparent;
+    box-sizing: content-box;
+    position: relative;
+
+    @include phones {
+        width: 25.125rem;
+    }
+}
+
+.stock__slider-wrapper {
+    position: absolute;
+    width: 100%;
+    top: rem(-290px);
+}
+
+.stock__slider-list {
+    width: 100%;
+    padding-top: rem(26px);
+
+    @include phones {
+        padding-top: 0;
+    }
+}
+
+.stock__slider-item {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.stock__slider-header {
+    font-family: 'TT Travels Bold';
+    font-size: rem(30px);
+    color: #fff;
+}
+
+.stock__slider__after-header {
+    font-family: 'TT Travels Bold';
+    font-size: rem(15px);
+    color: #fff;
+}
+
+.stock__slider-price {
+    font-family: "TT Travels Bold";
+    font-size: rem(48px);
+    margin-top: rem(17px);
+    margin-bottom: rem(30px);
+    color: #d63737;
+    text-shadow: white rem(1px) rem(1px) 0, white rem(-1px) rem(-1px) 0, 
+                 white rem(-1px) rem(1px) 0, white rem(1px) rem(-1px) 0;
+}
+
+.button__stock {
+    display: block;
+    border-radius: rem(3px);
+    background-color:  #d63737;
+    box-shadow: rem(2px) rem(4px) rem(8px) rem(0px) rgba(0, 0, 0, 0.2);
+    width: rem(275px);
+    height: rem(47px);
+    text-decoration: none;
+    font-family: "TT Travels DemiBold";
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+
+    &:hover {
+        background-color: #c73636;
+    }
+}
+
+.arrow-stock-prev {
+    position: absolute;
+    bottom: rem(140px);
+    left: rem(-50px);
+}
+
+.arrow-stock-next {
+    position: absolute;
+    bottom: rem(140px);
+    right: rem(-50px);
+}

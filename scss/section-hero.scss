@@ -1,0 +1,108 @@
+.section-hero {
+    height: 100vh;
+    background-image: url(../img/hero/bg2.png);
+    background-size: cover;
+    background-position: center bottom;
+}
+
+.container-hero {
+    position: relative;
+}
+
+.section-hero__header {
+    font-family: 'TT Travels ExtraBold';
+    font-size: rem(48px);
+    color: #fff;
+    position: relative;
+    top: 40%;
+
+    @include phones {
+        top: 24%;
+        font-size: 1.9rem;
+        text-align: center;
+    }
+}
+
+.section-hero__scroll-link {
+    position: absolute;
+    bottom: rem(20px);
+    left: calc(50% - 12px);
+}
+
+.hero__modal {
+    position: absolute;
+    width: rem(325px);
+    height: rem(340px);
+    padding: 0 rem(25px);
+    background-color:  rgba(59, 114, 153, 0.75);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    right: rem(25px);
+    top: 30%;
+
+    @include phones {
+        top: 50%;
+        right: calc(50% - 10rem);
+        height: 17.95rem;
+    }
+}
+
+.section-hero__scroll-img {
+    width: rem(24px);
+    height: rem(49px);
+}
+.hero__modal-header {
+    font-family: 'TT Travels Bold';
+    font-size: rem(30px);
+    color: #fff;
+    text-align: center;
+    margin-bottom: rem(25px);
+}
+
+.hero__modal-form {
+    width: 100%;
+}
+
+.input {
+    width: 100%;
+    height: rem(45px);
+    display: block;
+    border: rem(1px) solid #abb7c0;
+    border-radius: rem(3px);
+    background-color: #d0dce5;
+    margin-bottom: rem(11px);
+    padding-left: rem(45px);
+    outline: none;
+    background-repeat: no-repeat; /*Убираем повтор изображения*/   
+    background-position: rem(17px); /*Позиционируем*/ 
+
+    &::placeholder {
+        font-family: 'TT Travels Regular';
+        font-size: rem(16px);
+        color: #363437;
+    }
+}
+
+.button {
+    display: block;
+    width: 100%;
+    height: rem(47px);
+    background-color: #d63737;
+    color: #fff;
+    font-family: 'TT Travels DemiBold';
+    text-transform: uppercase;
+    border:none;
+    border-radius: 3px;
+    box-shadow: rem(2px) rem(4px) rem(8px) rem(0px) rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+
+    &:hover {
+        background-color: #c73636;
+    }
+}
+
+.button__hero {
+    margin-top: rem(25px);
+}

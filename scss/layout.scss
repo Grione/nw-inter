@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'TT Travels Regular', sans-serif;
+    font-size: 16px;
+    color: #2a282b;
+
+    @include desktop {
+        font-size: 14px;
+    }
+
+    @include tablets {
+        font-size: 12px;
+    }
+
+    @include phones {
+        font-size: 10px;
+    }
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+Ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ol {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    padding: 0;
+    margin: 0;
+}
+
+textarea {
+    resize: none;
+}
+
+.wrapper {
+    overflow-x: hidden;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 25px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.section-header {
+    position: relative;
+    font-family: "TT Travels Bold";
+    font-size: rem(36px);
+    color: #3e5475;
+    display: inline-block;
+    text-align: center;
+    
+    &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: rem(50px);
+        height: rem(3px);
+        background-color: #0e75c0;
+        right:50%;
+        bottom: rem(-9px);
+    }
+
+    &:before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: rem(50px);
+        height: rem(3px);
+        background-color: #26a9df;
+        left:50%;
+        bottom: rem(-9px);
+    }
+}
+
+.arrow-block {
+    width: rem(38px);
+    height: rem(38px);
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    
+}
+
+.arrow-block--red {
+    background-color: #d63737;
+
+    &:hover {
+        background-color: #0e75c0;
+    }
+}
+
+.arrow-block--gray {
+    background-color: #f4f3f4;
+
+    &:hover {
+        background-color: #0e75c0;
+    }
+
+    &:hover .arrow-blue{
+        color: #fff;
+    }
+}
+
+.arrow-block--white {
+    background-color: #fff;
+    border: 1px solid #cccccc;
+
+    &:hover {
+        background-color: #0e75c0;
+    }
+
+    &:hover .arrow-blue{
+        color: #fff;
+    }
+}
+
+.fa-arrow-left {
+   
+    color: #fff;
+}
+
+.fa-arrow-right {
+    
+    color: #fff;
+}

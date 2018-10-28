@@ -1,0 +1,169 @@
+.section-project {
+    width: 100%;
+    background-image: url(../img/project/bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    padding: rem(65px) 0;
+}
+
+.project__main {
+    padding: rem(35px) rem(75px) rem(47px) rem(75px);
+    background-color: #fff;
+    text-align: center;
+    position: relative;
+}
+
+.project__list {
+    margin-top: rem(50px);
+}
+
+.project__item {
+    display: flex;
+
+    @include phones {
+        flex-direction: column;
+    }
+}
+
+
+
+.project__item-text {
+    width: 49%;
+
+    @include phones {
+        width: 100%;
+    }
+    
+}
+
+.project__item-header {
+    font-family: "TT Travels DemiBold";
+    font-size: rem(24px);
+    margin-bottom: rem(20px);
+    text-align: left;
+
+    @include phones {
+        text-align: center;
+        margin-top: 20px;
+    }
+}
+
+.project__item-desc {
+    text-align: justify;
+
+    @include phones {
+        text-align: center;
+        font-size: 13px;
+    }
+}
+
+.arrow-project-next {
+    position: absolute;
+    top:calc(50% - 19px);
+    right: rem(25px);
+}
+
+.arrow-project-prev {
+    position: absolute;
+    top:calc(50% - 19px);
+    left: rem(25px);
+} 
+
+.project__item-pictures-wrap {
+    display: flex;
+    width: 49%;
+    height: rem(240px);
+
+    @include phones {
+        width: 100%;
+        flex-direction: column;
+    }
+}
+
+.project__pictures-list {
+    width: 70%;
+    height: 100%;
+    margin-right: rem(25px);
+
+    @include phones {
+        width: 99%;
+    }
+}
+
+.project__pictures-item {
+    
+    background-size: cover;
+    border: rem(1px) solid #cccccc;
+    padding: rem(10px);
+}
+
+.project__pictures-img {
+    width: 100%;
+}
+
+.project__thumb-list {
+    width: rem(75px);
+    display: flex;
+    flex-direction: column;
+
+    @include phones {
+        width: 100%;
+        flex-direction: row;
+        margin-top: 5px;
+        justify-content: space-between;
+    }
+
+}
+
+.project__thumb-item {
+    padding: rem(5px);
+    border: rem(1px) solid #cccccc;
+    margin-bottom: rem(13px);
+    height: rem(60px);
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    @include phones {
+        margin-bottom: 0;
+    }
+}
+
+.project__pictures-large {
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-size: cover;
+}
+
+.project__thumb-img {
+    width: 100%;
+
+    @include phones {
+        width: initial;
+    }
+}
+
+.project__thumb-link {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-size: cover;
+    background-position: center center;
+}
+
+.img-large {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+}
+
+.img__thumb {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+}

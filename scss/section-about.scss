@@ -1,0 +1,105 @@
+.section-about {
+    padding-top: rem(43px); 
+    padding-bottom: rem(40px);
+}
+
+.container-about {
+    text-align: center;
+
+    padding: 0;
+}
+
+.about__main {
+    margin-top: rem(60px);
+    display: flex;
+    justify-content: space-between;
+
+    @include phones {
+        flex-direction: column;
+    }
+    
+}
+
+.about__slide-wrap {
+    position: relative;
+    width: rem(350px);
+
+    @include phones {
+        width: 100%;
+    }
+    
+}
+
+.about__slider {
+    width: 100%;
+    height: rem(320px);
+}
+
+.about__slider-item {
+    
+    width: 100%;
+    height: rem(320px);
+    background-size: cover;
+}
+
+.about__slider-nav {
+   margin-top: rem(22px);
+    height:rem(100px);
+}
+
+.about__slider-nav__item {
+    height: rem(100px);
+    width: rem(100px);
+    margin-right: rem(20px);
+    background-size: cover;
+    background-position: center center;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.about__text {
+    width: 67%;
+    text-align: left;
+    line-height: 1.4;
+
+    @include phones {
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+    }
+}
+
+.about__p {
+    font-size: rem(18px);
+    color: #363437;
+    margin-bottom: rem(26px);
+    text-align: justify;
+}
+
+.about__p-blue {
+    font-family: "TT Travels DemiBold";
+    color: #3b7299;
+}
+
+.about__p-bold {
+    font-family: "TT Travels DemiBold";
+    
+}
+
+.arrow-blue {
+    color: #408bc4;
+}
+
+.arrow-about-prev {
+    position: absolute;
+    top: rem(140px);
+    left: 0;
+}
+
+.arrow-about-next {
+    position: absolute;
+    top: rem(140px);
+    right: 0;
+}

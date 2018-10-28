@@ -1,0 +1,77 @@
+.nav {
+    background-color:  rgba(255, 255, 255, 0.9);
+    position: absolute;
+    width: 100%;
+    top: rem(113px);
+    z-index: 300;
+
+    @include phones {
+        top: 7.7625rem;
+        z-index: 300;
+    }
+}
+
+.container-nav {
+    @include phones {
+        padding: 0 5px;
+    }
+}
+
+.nav__main {
+    display: flex;
+    padding: rem(12px) 0;
+
+    @include phones {
+        justify-content: space-evenly;
+    }
+
+
+    .nav-link {
+        position: relative;
+        margin-right: rem(40px);
+        font-family: 'TT Travels Medium';
+        text-decoration: none;
+        color: #2a282b;
+       
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &:after {
+            content: "";
+            position: absolute;
+            display: block;
+            width: 100%;
+            height: rem(3px);
+            background-color: #0e75c0;
+            opacity: 0;
+            transition: 0.5s;
+        }
+
+        &:hover:after {
+            opacity: 1;
+        }
+
+        &--active {
+            color: #0e75c0;
+            position: relative;
+
+            &:before {
+                content: "";
+                position: absolute;
+                display: block;
+                width: 100%;
+                height: rem(3px);
+                background-color: #0e75c0;
+                bottom: rem(-3px);
+                
+            }
+        }
+
+        @include phones {
+            margin-right: 0;
+            justify-content: space-between;
+            white-space: nowrap;
+        }
+    }
+}

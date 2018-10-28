@@ -1,0 +1,59 @@
+//function px to rem. -?\d+px ---to rem($0)
+
+@function rem($px) {
+    @return $px / 16px + 0rem;
+}
+
+// resolutions
+
+$desktop:1200px;
+$laptop:992px;
+$tablets:768px;
+$phones:480px;
+
+// mixins
+
+@mixin desktop {
+    @media screen and (max-width:$desktop){
+        @content;
+    }
+}
+
+@mixin laptop {
+    @media screen and (max-width:$laptop){
+        @content;
+    }
+}
+
+@mixin tablets {
+    @media screen and (max-width:$tablets){
+        @content;
+    }
+}
+
+@mixin phones {
+    @media screen and (max-width:$phones){
+        @content;
+    }
+}
+
+// import 
+
+@import "font";
+@import "layout";
+@import "header";
+@import "nav";
+@import "section-hero";
+@import "section-features";
+@import "section-activity";
+@import "section-stock";
+@import "section-about";
+@import "section-work";
+@import "section-project";
+@import "section-partner";
+@import "section-question";
+@import "section-map";
+@import "footer";
+@import "popup";
+
+

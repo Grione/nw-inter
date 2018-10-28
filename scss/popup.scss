@@ -1,0 +1,214 @@
+.popup__wrapper {
+    position: fixed;
+    display: none;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba($color: #214763, $alpha: 0.75);
+    z-index: 250;
+    justify-content: center;
+    align-items: center;
+    z-index: 400;
+}
+
+.popup--active {
+    display: flex;
+}
+
+.popup {
+    position: relative;
+    width: 24%;
+    height: rem(385px);
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: rem(27px);
+    padding-bottom: rem(33px);
+
+    @include phones {
+        width: 90%;
+        height: 50%;
+    }
+
+}
+
+.popup__header {
+    font-family: 'TT Travels Bold';
+    font-size: rem(30px);
+    color: #3e5475;
+    text-align: center;
+}
+
+.form-popup {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin-top: rem(35px);
+    
+}
+
+.input-popup {
+    width: 100%;
+    height: 2.8125rem;
+    display: block;
+    margin-bottom: rem(11px);
+    border: 0.0625rem solid #ccc;
+    border-radius: 0.1875rem;
+    background-color: #fff;
+    outline: none;
+    background-repeat: no-repeat;
+    background-position: 1.0625rem;
+    padding-left: 2.8125rem;
+
+    &::placeholder {
+        font-family: 'TT Travels Regular';
+        font-size: rem(16px);
+        color: #363437;
+    }
+}
+
+.input-check {
+    margin-top: rem(26px);
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+
+}
+
+.checkmark {
+    position: absolute;
+    top: rem(-3px);
+    left: 0;
+    height: rem(25px);
+    width: rem(25px);
+    background-color: #fff;
+    border: rem(1px) solid #ccc;
+    border-radius: rem(3px);
+}
+
+.label {
+    position: relative;
+    margin-top: rem(20px);
+    margin-bottom: rem(20px);
+    padding-left: rem(40px);
+}
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.label input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.label .checkmark:after {
+    left: rem(8px);
+    top: rem(5px);
+    width: rem(5px);
+    height: rem(10px);
+    border: solid #0e75c0;
+    border-width: 0 rem(3px) rem(3px) 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.checkbox__span {
+    font-size: rem(14px);
+    color: #363437;
+}
+
+.checkbox__link {
+    text-decoration: none;
+    font-family: 'TT Travels Regular';
+    font-size: rem(14px);
+    color: #0e75c0;
+}
+
+.textarea-popup {
+    width: 100%;
+    display: block;
+    border: 0.0625rem solid #abb7c0;
+    border-radius: 0.1875rem;
+    background-color: #d0dce5;
+    outline: none;
+    background-repeat: no-repeat;
+    background-position: 1.0625rem 0.2rem;
+    padding-left: 2.8125rem;
+}
+
+.close {
+    position: absolute;
+    right: rem(8px);
+    top: rem(8px);
+    width: 2rem;
+    height: 2rem;
+    opacity: 0.3;
+    cursor: pointer;
+    
+}
+  
+  .close:hover {
+    opacity: 1; }
+  
+  .close:before, .close:after {
+    position: absolute;
+    left: 0.9375rem;
+    content: ' ';
+    height: 2.0625rem;
+    width: 0.125rem;
+    background-color: #3e5475; }
+  
+  .close:before {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg); }
+  
+  .close:after {
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg); }
+
+
+
+///// success 
+
+.success__wrapper {
+    position: fixed;
+    display: none;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba($color: #000000, $alpha: 0.8);
+    z-index: 250;
+    justify-content: center;
+    align-items: center;
+    z-index: 300;
+}
+
+.success__wrapper--active {
+    display: flex;
+}
+
+.success {
+    position: relative;
+    width: 50%;
+    height: 20%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.success__text {
+    font-family: 'TT Travels Bold';
+    font-size: 1.175rem;
+    color: #3e5475;
+    text-align: center;
+}

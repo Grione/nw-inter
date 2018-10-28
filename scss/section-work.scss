@@ -1,0 +1,150 @@
+.section-work {
+    width: 100%;
+    padding-top: rem(43px);
+    padding-bottom: rem(40px);
+    background-image: url(../img/work/bg.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.container-work {
+    text-align: center;
+}
+
+.work__list {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: rem(20px);
+
+    @include phones {
+        width: 100%;
+    }
+}
+
+.work__item {
+    
+    position: relative;
+    width: 33%;
+    
+
+    &:hover {
+        z-index: 190;
+        background-color: #fff;
+        box-shadow: rem(0px) rem(0px) rem(8px) rem(0px) rgba(0, 0, 0, 0.25);
+    }
+
+    &:hover .work__item-hover {
+        display: flex;    
+    
+    }
+
+    @include phones {
+        width: 50%;
+        
+        &:hover .work__item-hover {
+            display: none;    
+        
+        }
+    }
+}
+
+.work__item-main {
+    display: flex;
+    padding: rem(55px) rem(9px) 0 rem(25px);
+
+    @include phones {
+        flex-direction: column;
+        padding: 0;
+    }
+}
+
+.work__icon-wrap {
+    margin-top: rem(23px);
+    height: 66px;
+}
+
+.work__icon {
+    display: inline !important;
+}
+
+.work__item-text {
+    text-align: left;
+    margin-left: rem(25px);
+
+    @include phones {
+        margin-left: 0;
+        text-align: center;
+    }
+}
+
+.work__item-header {
+    font-family: "TT Travels DemiBold";
+    font-size: rem(18px);
+    color: #363437;
+    margin-bottom: rem(15px);
+
+    @include phones {
+        font-size: 1.625rem;
+    }
+}
+
+.work__item-desc {
+    font-size: rem(18px);
+    color: #363437;
+    text-align: justify;
+
+    @include phones {
+        font-size: 1.525rem;
+    }
+}
+
+.work__item-hover {
+    position: absolute;
+
+    width: 100%;
+    padding-bottom: rem(28px);
+    text-align: center;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    box-shadow: rem(0px) rem(7px) rem(8px) rem(0px) rgba(0, 0, 0, 0.25);
+    z-index: 100;
+    bottom: rem(-75px);
+    display: none;
+}
+
+.button__work {
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: rem(320px);
+    height: rem(47px);
+    background-color:  #d63737;
+    box-shadow: rem(2px) rem(4px) rem(8px) rem(0px) rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    font-family: "TT Travels DemiBold";
+    color: #fff;
+
+    &:hover {
+        background-color: #c73636;
+    }
+}
+
+.work-arrow {
+    width: rem(120px);
+    height: rem(7px);
+    position: absolute;
+
+    @include phones {
+        display: none !important;
+    }
+    
+}
+
+.work-arrow__up {
+    position: absolute;
+}
+

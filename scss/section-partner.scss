@@ -1,0 +1,61 @@
+.section-partner {
+    padding-top: rem(50px);
+    padding-bottom: rem(50px);
+}
+
+.partner-main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.partner__list {
+    margin-top: rem(60px);
+    width: 80%;
+    height: rem(150px);
+
+    @include phones {
+        margin-top: 5px;
+    }
+}
+
+.partner__item {
+    width: rem(150px);
+    height: rem(150px);
+    margin-right: rem(50px);
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+
+    @include phones {
+        margin-right: 0;
+    }
+}
+
+.partner-img {
+    width: 100%;
+    height: auto;
+}
+
+.arrow-partner-prev {
+    position: absolute;
+    top: calc(50% - 19px);
+    left: 0;
+
+    @include phones {
+        top: 50%;
+    }
+}
+
+.arrow-partner-next {
+    position: absolute;
+    top: calc(50% - 19px); 
+    right: 0;
+
+    @include phones {
+        top: 50%;
+    }
+} 
+

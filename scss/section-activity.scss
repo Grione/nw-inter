@@ -1,0 +1,110 @@
+.section-activity {
+    width: 100%;
+    background-color: #f4f4f4;
+    padding-top: rem(40px);
+    padding-bottom: rem(50px);
+}
+
+.container-activity {
+    text-align: center;
+}
+
+.section-description {
+    font-size: rem(20px);
+    margin-top: rem(28px);
+}
+
+.activity__list {
+    width: 100%;
+    display: flex;
+    margin-top: rem(55px);
+    justify-content: space-between;
+
+    @include phones {
+        flex-direction: column;
+    }
+}
+
+.activity__item {
+    position: relative;
+    width: 30%;
+    height: rem(212px);
+    background-color: #fff;
+    border: rem(10px) solid #fff;
+    box-shadow: rem(0px) rem(0px) rem(10px) rem(0px) rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    &:hover .activity__item-header{
+        display: none;
+    }
+
+    &:hover .activity__item__hover{
+        
+        opacity: 1;
+    }
+
+    @include phones {
+        width: 100%;
+        margin-bottom: 10px;
+        background-size: cover;
+        background-position: center center;
+    }
+}
+
+.activity__item-header {
+    font-family: 'TT Travels DemiBold';
+    font-size: rem(20px);
+    color: #fff;
+
+    @include phones {
+        font-size: 2.15rem;
+    }
+
+}
+
+.activity__item__hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(33, 71, 99, 0.75);
+    padding: rem(16px) rem(20px);
+    opacity: 0;
+    transition: 0.8s;
+}
+
+.activity__item__hover-header {
+    font-family: 'TT Travels DemiBold';
+    font-size: rem(20px);
+    color: #fff;
+    position: relative;
+
+    &:after {
+        content: '';
+        position: absolute;
+        display: block;
+        width: rem(50px);
+        height: rem(2px);
+        background-color: #fff; 
+        left: calc(50% - 25px); 
+        bottom: rem(-9px);      
+    }
+
+    @include phones {
+        font-size: 1.65rem;
+    }
+}
+
+.activity__item__hover-desc {
+    margin-top: rem(20px);
+    color: #fff;
+    font-size: rem(13px);
+
+    @include phones {
+        font-size: 1.0125rem;
+    }
+}

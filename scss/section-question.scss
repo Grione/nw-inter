@@ -1,0 +1,78 @@
+.section-question {
+    background-image: url(../img/questions/bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    padding-top: rem(50px);
+    padding-bottom: rem(40px);
+}
+
+.question-main {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+
+    @include phones {
+        justify-content: space-between;
+        flex-direction: column;
+    }
+}
+
+.question__img-wrapper {
+    position: absolute;
+    width: 25%;
+    left: 0;
+    top: -6.8625rem;
+
+    @include phones {
+        display: none;
+    }
+}
+
+.question-img {
+    width: 100%;
+    max-width: rem(316px);
+    height: auto;
+}
+
+.question-header {
+    font-family: "TT Travels Bold";
+    font-size: rem(48px);
+    color: #fff;
+    text-align: right;
+    margin-right: rem(75px);
+
+    @include phones {
+        margin-right:0;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+}
+
+.form-question {
+    width: 23%;
+
+    @include phones {
+        width: inherit;
+    }
+}
+
+.textarea {
+    width: 100%;
+    height: rem(85px);
+    display: block;
+    border: rem(1px) solid #abb7c0;
+    border-radius: rem(3px);
+    background-color: #d0dce5;
+    margin-bottom: rem(11px);
+    padding-left: rem(45px);
+    padding-top: rem(18px);
+    outline: none;
+    background-repeat: no-repeat;
+    background-position: rem(17px) rem(18px);
+
+    &::placeholder {
+        font-family: 'TT Travels Regular';
+        font-size: rem(16px);
+        color: #363437;
+    }
+}

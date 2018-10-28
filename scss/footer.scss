@@ -1,0 +1,236 @@
+//// footer top
+.footer__top {
+    background-color: #e6e6e6;
+}
+
+.container-footer {
+    display: flex;
+    justify-content: space-between;
+    padding-top: rem(25px);
+    padding-bottom: rem(25px);
+
+    @include phones {
+        flex-direction: column;
+        position: relative;
+    }
+    
+}
+
+.footer__left {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    @include phones {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 30px;
+        width: 100%;
+    }
+}
+
+.footer__logo-link {
+    display: inline-block;
+    width: 26%;
+}
+
+.footer__logo-img {
+    width: 100%;
+    max-width: rem(125px);
+}
+
+.footer__logo-txt {
+    font-size: rem(20px);
+
+    @include phones {
+        text-align: center;
+        width: 100%;
+    }
+}
+
+.footer-policy {
+    text-decoration: none;
+    font-size: rem(12px);
+    color: #2a282b;
+    position: absolute;
+    bottom: 0;
+    z-index: 100;
+    @include phones {
+        bottom: -8px;
+    }
+}
+
+.footer__right {
+    display: flex;
+
+    @include phones {
+        flex-direction: column;
+    }
+}
+
+.footer__right-block__left {
+    margin-right: rem(25px);
+
+    @include phones {
+        margin-right: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+}
+
+.footer__right-block__right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    @include phones {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.footer-icon {
+    margin-right: rem(7px);
+    vertical-align: top;
+
+    @include phones {
+        margin-right: 0;
+    }
+}
+
+.footer__address-p {
+    display: inline-block;
+    font-size: rem(14px);
+    color: #363437;
+    margin-bottom: rem(20px);
+}
+
+.footer__phone {
+
+    @include phones {
+        display: flex;
+        align-items: center;
+    }
+    
+}
+
+.footer__phone-link {
+    font-family: "TT Travels DemiBold";
+    color: #363437;
+    display: inline-block;
+    font-size: rem(14px);
+    text-decoration: none;
+    margin-bottom: rem(12px);
+    cursor: text;
+
+    @include phones {
+        margin-bottom: 0;
+    }
+}
+
+.footer__mail {
+    display: none;
+}
+
+.footer__social {
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    left: rem(20px);
+
+    @include phones {
+        position: absolute;
+        bottom: 4px;
+        left: calc(50% - 35px);
+    }
+}
+
+.footer__item {
+    width: rem(33px);
+    height: rem(33px);
+    border-radius: 50%;
+    margin-right: rem(6px);
+    transition: 0.5s;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.footer__item-link {
+    display: flex;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.item-face {
+    background-color: #31497e;
+
+    &:hover {
+        background-color: #5e7098;
+    }
+}
+
+.item-vk {
+    background-color: #4369a9;
+
+    &:hover {
+        background-color: #6c88b8;
+    }
+}
+
+.item-you {
+    background-color: #e42d26;
+
+    &:hover {
+        background-color: #e55b56;
+    }
+}
+
+.footer__mail-link {
+    text-decoration: none;
+    font-size: rem(14px);
+    color: #0e75c0;
+    font-family: 'TT Travels Regular';
+}
+
+.footer__bottom {
+    background-color: #3e5475;
+    height: rem(55px);
+}
+
+.footar__bottom-main {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__copy {
+    font-size: rem(14px);
+    color: #fff;
+}
+
+.footer__duck {
+    font-size: rem(14px);
+    color: #fff;
+    text-align: right;
+}
+
+.duck-link {
+    font-size: rem(14px);
+    color: #fff;
+    font-family: 'TT Travels Regular';
+    transition: 0.8s;
+
+    &:hover {
+        color: #ffbd20;
+    }
+}
